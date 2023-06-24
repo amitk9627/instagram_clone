@@ -1,3 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  font-size: 1.5rem;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  margin : 4rem;
+}
+.navbar-wrap {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(8, 8, 8);
+}
+
+.link-wrap {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin: 1rem 3rem;
+  gap:10px;
+  
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link-wrap:hover {
+  border-radius: 20px;
+  background-color: rgb(121, 121, 121);
+}
+
 .card-wrap {
   height: 500px;
   width: 500px;
@@ -9,7 +47,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
- 
+
   height: 10%;
   width: 100%;
 }
@@ -31,32 +69,39 @@
   height: 100%;
   width: 100%;
 }
-.card-footer{
-  padding:10px 20px;
+
+.card-footer {
+  padding: 10px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.likecommentshare{
-  
-  width:25%;
+
+.likecommentshare {
+
+  width: 25%;
   display: inherit;
   flex-direction: row;
   justify-content: space-between;
 }
-.icon{
+
+.icon {
   padding: 5px;
   font-size: 1.5rem;
 }
-#like{
+
+#like {
   color: red;
 }
-#dislike{
+
+#dislike {
   color: rgb(182, 181, 181);
 }
-#saved{
+
+#saved {
   color: rgb(32, 31, 31);
 }
-#unsaved{
+
+#unsaved {
   color: rgb(182, 181, 181);
 }

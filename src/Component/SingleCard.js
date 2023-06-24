@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-const SingleCard = () => {
+const SingleCard = ({data}) => {
+    // console.log(src);
     const[like,setLike]=useState(false);
     const[saved,setSaved]=useState(false);
 
@@ -9,13 +10,13 @@ const SingleCard = () => {
             <div className='card-wrap'>
 
                 <div className='card-header' style={{ marginLeft: "5px" }}>
-                    <img src="https://plus.unsplash.com/premium_photo-1681266198484-f24f4280cdb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9yZXN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="name" />
-                    <span style={{ fontSize: "1.3rem", fontWeight: 600, marginLeft: "10px" }}> { }Amit Kumar</span>
+                    <img src={data.user?.profile_image?.large} alt="name" />
+                    <span style={{ fontSize: "1.3rem", fontWeight: 600, marginLeft: "10px" }}> {data.user.first_name }</span>
 
                 </div>
 
                 <div className='img-wrap'>
-                    <img src="https://plus.unsplash.com/premium_photo-1681266198484-f24f4280cdb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9yZXN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="name" />
+                    <img src={data.urls.regular} alt="name" />
                 </div>
 
                 <div className='card-footer'>
